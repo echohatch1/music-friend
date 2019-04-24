@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>San Angelico Museum of Contemporary Art</title>
+  <link rel="stylesheet" href="css/themes/my-custom-theme.css" />
+  <link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
+  <script src="js/jquery.mobile.min.js" type="text/javascript"></script>
+  <script src="js/jquery.js" type="text/javascript"></script>
+  <link rel="stylesheet" href="css/jquery.mobile.min.css">
+  <link rel="stylesheet" href="css/index.css">
+  <style>
+    #homeBanner {
+      width: 100%;
+    }
+    
+    .center {
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
+    .banner {
+      display: block;
+      width: 100%;
+    }
+    
+    #qrcode {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
+    #map2 {
+      margin-left: auto;
+      margin-right: auto;
+      width: 320px;
+      height: 320px;
+    }
+      #secondaryPage_img{
+          width: 100%;
+      }
+  </style>
+  <script src="js/jquery.js"></script>
+  <script src="js/jquery.mobile.min.js"></script>
+
+</head>
+
+<body>
+  
+  <div id="homeScreen" data-role="page">
+
+        <header data-role="header" data-position="fixed">
+          <h1>Home</h1>
+          <a href="#homeScreen" class="ui-btn ui-btn-left">Home</a>
+          <a href="#page2" class="ui-btn ui-btn-right">Page 2</a>
+      </header>
+<img src="imgs/home.jpg" class="banner" />
+    
+    <div data-role="content">
+        <form method="get" action="">
+
+            <fieldset data-role="controlgroup" data-type="horizontal">
+              <legend>Instrament of choice:</legend>
+              <label for="rb5">Drums</label>
+              <input type="radio" name="rbtn" id="rb5" value="rb5" checked="checked"/>
+              <label for="rb6">Guitar</label>
+              <input type="radio" name="rbtn" id="rb6" value="rb6"/>
+              <label for="rb7">Piano</label>
+              <input type="radio" name="rbtn" id="rb7" value="rb7"/>
+            </fieldset>
+ 
+          </form>
+          <form method="get" action="">
+              <fieldset class="ui-field-contain">
+                <legend>How good are you at your instrament?</legend>
+                <label for="num">Enter a Number</label>
+                <input type="range" name="num" id="num" value="25" min="0" max="100" />
+              </fieldset>
+            </form>
+
+              <div id="deviceready" class="blink">
+                  <p class="event listening">Connecting to Device</p>
+                  <p class="event received"></p>
+                  <p class="battery-status">LOOK</p>
+              </div>
+    </div>
+    <footer data-role="footer" data-position="fixed">
+        <h4>Music Friend</h4>
+    </footer>
+  </div>
+
+  <section id="page2" data-role="page">
+        
+      <header data-role="header" data-position="fixed">
+          <h1>Page 2</h1>
+          <a href="#homeScreen" class="ui-btn ui-btn-left">Home</a>
+          <a href="#page3" class="ui-btn ui-btn-right">Page 3</a>
+      </header>
+      
+      <div class="ui-content">
+          <div data-role="content">
+            <ul data-role="listview">
+                <li><a href="#">Drums</a></li>
+                <li><a href="#">Guitar</a></li>
+                <li><a href="#">Piano</a></li>
+              </ul>
+            </div>
+
+              <div data-role="collapsible">
+                  <h3>More info about instraments</h3>
+                  <p>Music is great!</p>
+                </div>
+      </div>
+      
+      <footer data-role="footer" data-position="fixed">
+          <h4>Music Friend</h4>
+          <a href="#homeScreen" class="ui-btn ui-btn-left">Home</a>
+      </footer>
+      
+  </section> <!-- End Page 2 -->
+  
+  <section id="page3" data-role="page">
+      
+      <header data-role="header" data-position="fixed">
+          <h1>Page 3</h1>
+          <a href="#page2" class="ui-btn ui-btn-left">Page 2</a>
+          <a href="#page4" class="ui-btn ui-btn-right">Page 4</a>
+      </header>
+      
+      <div class="ui-content">
+          
+          <form method="get" action="">
+              <fieldset class="ui-field-contain">
+                <label for="select1">Who is your favorite band?:</label>
+                <select name="select1" id="select1">
+                  <option value="value1">Blink-182</option>
+                  <option value="value2">Van Halen</option>
+                  <option value="value3">The Killers</option>
+                  <option value="value4">Queen</option>
+                </select>
+              </fieldset>
+            </form>
+
+      </div>
+      
+      <footer data-role="footer" data-position="fixed">
+          <h4>Music Friend</h4>
+          <a href="#homeScreen" class="ui-btn ui-btn-left">Home</a>
+      </footer>
+      
+  </section> <!-- End Page 3 -->
+  
+  <section id="page4" data-role="page">
+      
+      <header data-role="header" data-position="fixed">
+          <h1>Contact Us</h1>
+          <a href="#page3" class="ui-btn ui-btn-left">Page 3</a>
+      </header>
+      
+      <div class="ui-content">
+          <!-- INPUTS -->
+        <form method="get" action="">
+          <fieldset class="ui-field-contain">
+            <label for="address">Your Address:</label>
+            <input type="text" name="address" id="address" value="" placeholder="Your Address"/>
+            <label for="email">Your email: </label>
+            <input type="email" name="email" id="email" value="" placeholder="Your Email"/>
+            <div class="ui-field-contain">
+                <label for="details">Send us a message!</label>
+                <textarea id="details"></textarea>
+              </div>
+              <button class="ui-btn" type="submit" data-theme="b">Submit</button>
+          </fieldset>
+ 
+
+        </form>
+        <!-- END INPUTS -->
+          
+
+      </div>
+      
+      <footer data-role="footer" data-position="fixed">
+          <h4>Music Friend</h4>
+          <a href="#homeScreen" class="ui-btn ui-btn-left">Home</a>
+      </footer>
+      
+  </section> <!-- End Page 4 -->
+
+  <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript">
+        app.initialize();
+  </script>
+</body>
+
+</html>
